@@ -1,0 +1,377 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16D32" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="Lyw-7y-HGW">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Checconi Contabilidade-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Checconi" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" misplaced="YES" axis="vertical" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="ZqS-yE-hPj">
+                                <rect key="frame" x="67" y="213" width="240" height="240"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="TAU-nX-Zbd">
+                                        <rect key="frame" x="0.0" y="0.0" width="240" height="115"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pyH-RC-mPg">
+                                                <rect key="frame" x="0.0" y="0.0" width="115" height="115"/>
+                                                <color key="backgroundColor" red="0.24313725490196078" green="0.45490196078431372" blue="0.72156862745098038" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="115" id="7MI-Ad-hip"/>
+                                                    <constraint firstAttribute="width" constant="115" id="sGf-0q-DBo"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" type="boldSystem" pointSize="19"/>
+                                                <state key="normal" title="A Empresa">
+                                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                </state>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                        <integer key="value" value="57"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                                <connections>
+                                                    <segue destination="8bP-Ix-oe3" kind="show" id="dBg-JN-Boh"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="w4r-vn-b4h">
+                                                <rect key="frame" x="125" y="0.0" width="115" height="115"/>
+                                                <color key="backgroundColor" red="0.24313725489999999" green="0.4549019608" blue="0.72156862749999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="115" id="5Su-Lx-1dR"/>
+                                                    <constraint firstAttribute="height" constant="115" id="goH-ph-gNi"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" type="boldSystem" pointSize="19"/>
+                                                <state key="normal" title="Clientes">
+                                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                </state>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                        <integer key="value" value="57"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                                <connections>
+                                                    <segue destination="f71-rU-9Sz" kind="show" id="Nac-X7-tHR"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="Mft-1S-MCA">
+                                        <rect key="frame" x="0.0" y="125" width="240" height="115"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3J0-dZ-cdu">
+                                                <rect key="frame" x="0.0" y="0.0" width="115" height="115"/>
+                                                <color key="backgroundColor" red="0.24313725489999999" green="0.4549019608" blue="0.72156862749999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="115" id="P49-ua-bAk"/>
+                                                    <constraint firstAttribute="height" constant="115" id="tWX-Nn-EEQ"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" type="boldSystem" pointSize="19"/>
+                                                <state key="normal" title="Serviços">
+                                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                </state>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                        <integer key="value" value="57"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                                <connections>
+                                                    <segue destination="MSI-Uf-g5y" kind="show" id="C7c-om-fXq"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BrE-DY-zzR">
+                                                <rect key="frame" x="125" y="0.0" width="115" height="115"/>
+                                                <color key="backgroundColor" red="0.24313725489999999" green="0.4549019608" blue="0.72156862749999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="115" id="HPI-RU-g9A"/>
+                                                    <constraint firstAttribute="height" constant="115" id="n2o-VU-kOP"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" type="boldSystem" pointSize="19"/>
+                                                <state key="normal" title="Contato">
+                                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                </state>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                        <integer key="value" value="57"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                                <connections>
+                                                    <segue destination="WLz-Tv-UcI" kind="show" id="2mt-wr-syb"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                            </stackView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logo_pequeno" translatesAutoresizingMaskIntoConstraints="NO" id="n5I-3d-QpS">
+                                <rect key="frame" x="16" y="72" width="343" height="128"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="128" id="s7t-d8-bmN"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="ZqS-yE-hPj" firstAttribute="top" secondItem="n5I-3d-QpS" secondAttribute="bottom" constant="25" id="7Nw-Lo-pMn"/>
+                            <constraint firstAttribute="trailing" secondItem="n5I-3d-QpS" secondAttribute="trailing" constant="16" id="Lee-vk-8gC"/>
+                            <constraint firstItem="n5I-3d-QpS" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="8" id="UfS-1D-m22"/>
+                            <constraint firstItem="ZqS-yE-hPj" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="phi-Xn-u6e"/>
+                            <constraint firstItem="n5I-3d-QpS" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="16" id="v6o-xz-wId"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Checconi Contabilidade" id="zL5-sR-GSt"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="876" y="-545.57721139430294"/>
+        </scene>
+        <!--Serviços-->
+        <scene sceneID="aU8-eK-vnF">
+            <objects>
+                <viewController title="Serviços" id="MSI-Uf-g5y" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="RX9-ET-OaE"/>
+                        <viewControllerLayoutGuide type="bottom" id="JbN-7D-WRP"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="bWo-bq-Cog">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Constituição de Empresas" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Zby-zQ-ScT">
+                                <rect key="frame" x="16" y="72" width="343" height="21"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KkX-g2-Aeq">
+                                <rect key="frame" x="16" y="101" width="343" height="168"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="168" id="M2e-AV-3Ve"/>
+                                </constraints>
+                                <string key="text">- Firma Individual 
+- Sociedade por Cotas 
+- Sociedade Anônima 
+- Fundações 
+- Associações 
+- Cooperativas
+- Condomínios
+</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="KkX-g2-Aeq" firstAttribute="top" secondItem="Zby-zQ-ScT" secondAttribute="bottom" constant="8" id="FRC-ZE-Npz"/>
+                            <constraint firstItem="KkX-g2-Aeq" firstAttribute="leading" secondItem="bWo-bq-Cog" secondAttribute="leading" constant="16" id="Gzq-pD-boR"/>
+                            <constraint firstAttribute="trailing" secondItem="KkX-g2-Aeq" secondAttribute="trailing" constant="16" id="JNr-a2-3rX"/>
+                            <constraint firstItem="Zby-zQ-ScT" firstAttribute="leading" secondItem="bWo-bq-Cog" secondAttribute="leading" constant="16" id="iyW-y8-Y6w"/>
+                            <constraint firstAttribute="trailing" secondItem="Zby-zQ-ScT" secondAttribute="trailing" constant="16" id="l8Q-mx-7mU"/>
+                            <constraint firstItem="Zby-zQ-ScT" firstAttribute="top" secondItem="RX9-ET-OaE" secondAttribute="bottom" constant="8" id="qPh-14-tTp"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="aY4-vT-aa7" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="876" y="220.83958020989508"/>
+        </scene>
+        <!--Contato-->
+        <scene sceneID="lNK-NR-6Qb">
+            <objects>
+                <viewController title="Contato" id="WLz-Tv-UcI" customClass="ContatoViewController" customModule="Checconi" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="QTz-vt-2fd"/>
+                        <viewControllerLayoutGuide type="bottom" id="JQy-G5-rM5"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="4Zp-OQ-ZMe">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="bgB-0T-dKy">
+                                <rect key="frame" x="16" y="211" width="343" height="246"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XRv-yw-rPf">
+                                        <rect key="frame" x="0.0" y="0.0" width="343" height="35"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="19"/>
+                                        <state key="normal" title="checconi@checconi.com.br">
+                                            <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="enviarEmail:" destination="WLz-Tv-UcI" eventType="touchUpInside" id="hqQ-Nb-2YX"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PvB-iI-63N">
+                                        <rect key="frame" x="0.0" y="55" width="343" height="58"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="19"/>
+                                        <state key="normal">
+                                            <string key="title">(17) 3422-4413
+</string>
+                                            <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="telefonar:" destination="WLz-Tv-UcI" eventType="touchUpInside" id="fZW-c3-uOT"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="E97-2r-aYH">
+                                        <rect key="frame" x="0.0" y="133" width="343" height="35"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="19"/>
+                                        <state key="normal" title="www.checconi.com.br">
+                                            <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="abrirSite:" destination="WLz-Tv-UcI" eventType="touchUpInside" id="ssb-ba-IgY"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SoJ-IW-DEn">
+                                        <rect key="frame" x="0.0" y="188" width="343" height="58"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="19"/>
+                                        <state key="normal">
+                                            <string key="title">Rua Uruguai, 4622 - San Remo
+Votuporanga - SP</string>
+                                            <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="abrirMapa:" destination="WLz-Tv-UcI" eventType="touchUpInside" id="qqI-Q0-qXZ"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="bgB-0T-dKy" firstAttribute="centerX" secondItem="4Zp-OQ-ZMe" secondAttribute="centerX" id="KBb-io-AGy"/>
+                            <constraint firstItem="bgB-0T-dKy" firstAttribute="centerY" secondItem="4Zp-OQ-ZMe" secondAttribute="centerY" id="QBK-Em-P9h"/>
+                            <constraint firstAttribute="trailing" secondItem="bgB-0T-dKy" secondAttribute="trailing" constant="16" id="TYp-iP-Yuu"/>
+                            <constraint firstItem="bgB-0T-dKy" firstAttribute="leading" secondItem="4Zp-OQ-ZMe" secondAttribute="leading" constant="16" id="wh4-9T-51n"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="btnEndereco" destination="SoJ-IW-DEn" id="8xB-Zt-YRK"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="R5x-13-95L" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1709.5999999999999" y="-191.1544227886057"/>
+        </scene>
+        <!--A Empresa-->
+        <scene sceneID="EXp-HH-3Kb">
+            <objects>
+                <viewController title="A Empresa" id="8bP-Ix-oe3" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="tjb-SA-bm2"/>
+                        <viewControllerLayoutGuide type="bottom" id="LIM-Fa-9AQ"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="fUh-c7-flr">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QRH-8J-Lr3">
+                                <rect key="frame" x="16" y="72" width="343" height="365.5"/>
+                                <mutableString key="text">Visão
+Checconi Assessoria Contábil Ltda, é uma empresa com experiência há mais de 30 anos na prestação de serviços em consultoria e assessoria Contábil, Fiscal, Recursos Humanos, Legalização de Empresas e Planejamento Tributário.
+
+Missão
+Dar suporte aos clientes, na sua área de competência, para que as atividades empresariais sejam transparentes, econômicas e eficazes. Oferecer soluções de assessoria tributária, financeira, contábil, fiscal e de recursos humanos, com zelo, distinção e eficiência, utilizando a tecnologia de informação para agilidade, controle e segurança.</mutableString>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="QRH-8J-Lr3" firstAttribute="leading" secondItem="fUh-c7-flr" secondAttribute="leading" constant="16" id="53q-ON-t6d"/>
+                            <constraint firstItem="QRH-8J-Lr3" firstAttribute="top" secondItem="tjb-SA-bm2" secondAttribute="bottom" constant="8" id="PUd-9t-2lt"/>
+                            <constraint firstAttribute="trailing" secondItem="QRH-8J-Lr3" secondAttribute="trailing" constant="16" id="blr-G2-in3"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="VbC-5D-Y1k" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="876" y="-1223"/>
+        </scene>
+        <!--Clientes-->
+        <scene sceneID="dgo-dH-b0R">
+            <objects>
+                <viewController title="Clientes" id="f71-rU-9Sz" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="GtF-a0-yZ5"/>
+                        <viewControllerLayoutGuide type="bottom" id="5MD-HH-Fqd"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="ftl-Yy-oeZ">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="gwf-sb-qkG">
+                                <rect key="frame" x="16" y="72" width="343" height="587"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Indústrias" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RG9-w9-Ukq">
+                                        <rect key="frame" x="0.0" y="0.0" width="343" height="195.5"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Comércio" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3U6-q4-u7y">
+                                        <rect key="frame" x="0.0" y="195.5" width="343" height="196"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Prestação de Serviços" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RZR-EZ-AbO">
+                                        <rect key="frame" x="0.0" y="391.5" width="343" height="195.5"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="gwf-sb-qkG" firstAttribute="leading" secondItem="ftl-Yy-oeZ" secondAttribute="leading" constant="16" id="4If-fE-OkF"/>
+                            <constraint firstAttribute="trailing" secondItem="gwf-sb-qkG" secondAttribute="trailing" constant="16" id="4YJ-T0-oTd"/>
+                            <constraint firstItem="gwf-sb-qkG" firstAttribute="top" secondItem="GtF-a0-yZ5" secondAttribute="bottom" constant="8" id="FWP-Z2-iL9"/>
+                            <constraint firstItem="5MD-HH-Fqd" firstAttribute="top" secondItem="gwf-sb-qkG" secondAttribute="bottom" constant="8" id="T40-xB-Vmw"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Y5C-jh-VFC" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1709.5999999999999" y="-980.05997001499259"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="N3I-eV-W1g">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="Lyw-7y-HGW" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="cPe-Qe-zj4">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="isw-5P-T9g"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="oBa-yt-A7i" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="76" y="-543.77811094452773"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="logo_pequeno" width="989" height="223"/>
+    </resources>
+</document>
